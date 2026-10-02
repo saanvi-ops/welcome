@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pigpen Cipher: BOW OF IRIS</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #121212;
+        }
+
+        .cipher-container {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .word {
+            display: flex;
+            gap: 10px;
+        }
+
+        .space {
+            width: 20px;
+        }
+
+        svg {
+            width: 45px;
+            height: 45px;
+        }
+
+        path {
+            stroke: #ffffff;
+            stroke-width: 4;
+            fill: none;
+            stroke-linecap: square;
+            stroke-linejoin: miter;
+        }
+
+        circle {
+            fill: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cipher-container">
+        <!-- WORD 1: BOW -->
+        <div class="word">
+            <!-- B (Top-middle grid 1: left, bottom, right walls) -->
+            <svg viewBox="0 0 40 40"><path d="M 5,5 L 5,35 L 35,35 L 35,5" /></svg>
+            
+            <!-- O (Middle-right grid 2: top, left, bottom walls + dot) -->
+            <svg viewBox="0 0 40 40"><path d="M 35,5 L 5,5 L 5,35 L 35,35" /><circle cx="18" cy="20" r="3" /></svg>
+            
+            <!-- W (Top X-grid 2: V-shape + dot) -->
+            <svg viewBox="0 0 40 40"><path d="M 5,5 L 20,25 L 35,5" /><circle cx="20" cy="12" r="3" /></svg>
+        </div>
+
+        <!-- SPACE -->
+        <div class="space"></div>
+
+        <!-- WORD 2: OF -->
+        <div class="word">
+            <!-- O (Middle-right grid 2: top, left, bottom walls + dot) -->
+            <svg viewBox="0 0 40 40"><path d="M 35,5 L 5,5 L 5,35 L 35,35" /><circle cx="18" cy="20" r="3" /></svg>
+            
+            <!-- F (Middle-right grid 1: top, left, bottom walls) -->
+            <svg viewBox="0 0 40 40"><path d="M 35,5 L 5,5 L 5,35 L 35,35" /></svg>
+        </div>
+
+        <!-- SPACE -->
+        <div class="space"></div>
+
+        <!-- WORD 3: IRIS -->
+        <div class="word">
+            <!-- I (Bottom-right grid 1: top, left walls) -->
+            <svg viewBox="0 0 40 40"><path d="M 5,35 L 5,5 L 35,5" /></svg>
+            
+            <!-- R (Bottom-right grid 2: top, left walls + dot) -->
+            <svg viewBox="0 0 40 40"><path d="M 5,35 L 5,5 L 35,5" /><circle cx="15" cy="15" r="3" /></svg>
+            
+            <!-- I (Bottom-right grid 1: top, left walls) -->
+            <svg viewBox="0 0 40 40"><path d="M 5,35 L 5,5 L 35,5" /></svg>
+            
+            <!-- S (Top X-grid 1: V-shape) -->
+            <svg viewBox="0 0 40 40"><path d="M 5,5 L 20,25 L 35,5" /></svg>
+        </div>
+    </div>
+
+</body>
+</html>

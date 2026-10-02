@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX NODE // PACKET RETRIEVAL</title>
+    <style>
+        body {
+            background-color: #07090e;
+            color: #4a5568;
+            font-family: monospace;
+            padding: 40px;
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh;
+            margin: 0;
+        }
+        .vault-box {
+            border: 1px solid #1a202c;
+            background-color: #0d1117;
+            padding: 30px;
+            width: 95%;
+            max-width: 800px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+            border-radius: 4px;
+        }
+        .status-header {
+            font-size: 14px;
+            color: #a0aec0;
+            font-weight: bold;
+            border-bottom: 1px dashed #2d3748;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        .data-dump {
+            background-color: #05070a;
+            border: 1px solid #161b22;
+            padding: 20px;
+            color: #718096;
+            font-size: 12px;
+            word-break: break-all;
+            white-space: normal;
+            border-radius: 4px;
+            max-height: 400px;
+            overflow-y: auto;
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 0.5px;
+        }
+        .system-footer {
+            font-size: 13px;
+            color: #e2e8f0;
+            margin-top: 25px;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border-top: 1px dashed #2d3748;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="vault-box">
+        <div class="status-header">[!] STATUS: SEGMENT RETRIEVED FROM HOST LOG</div>
+        
+        <!-- This container houses your exact massive raw code dump string -->
+        <div class="data-dump">
+            wy7on84t37tpqfxt511cez0xn782tzc4t036cs4aib4gveqjr8q56vdfu97zigvticdml5x3lcc1fz7atbkbmwsck4w1iyu20mki1nx0se6hokg18djyweahsspdwwtn2gmpea0nicclxck1ym5su98ry45bk0xcxpr2bt7539x6st9wtcgkfximrnj8o28nyqe74nxup6qj3e6i2zz4v6bxo8rfxguh5b0dqsg6ly6dqhjrvwdq1s4di3c2gt2qnyqmgx5ilqjv0oc3u1ew479ubmkzjt9xq8ar60uehom9rzeklzxi6vftyhvgw3xv4ifs3ux4pgtqbo3dfaq15nvyzmnzjiv69v551qte081isfcno84tjkrp0doo6h3f327k19kskacdd6zgzbvz2w3pgtmta19p7xuw32zyuo4kfr9vxu6xq6zi5l8ojl1b2m1iz86xrxvnzc25a2607x3h3psqf8nc1sqr6bw7222becjz8f32vfw4aakws2vapx6nzr6y6q81cvdn97dchjezs1baiiqdbgssbsl3452bh26bh1qlbd9jcqt6h0g3a4f8vwcqkew7vdz8shvv8j07eakm7rbmcmi4np410qft44f28hbt5ans1dt9sh2llxr794ar3vglse01orsjee0tu0vhwjfq1qr3zw3qwkzzw14c7xvrxcv520xo2s2vk4gpz2u9gd4ajyd1hanvpik49aik4p6nyqm3znx9wpepctnfuoywxa9hkrylsotbvysc0xja4x29r45q97j9859iss4qjrvr2tyf94vy93y2dbdnnv9sizzze27ixnl1b0711fmzeeczs6jaqmj773xe8gf75zqo9vwhf7yp4zgtk7nw4b8i0397e3cklum5jkw129q1ug48uwztn89f9vmz8ew590xx6vf7eh2in3h5xhgbeqba8fzv9vt3yc04jrn3k0430sfxo9b2gz31x54gdrpqy1lmtuy9hsq5lwapzdqdyn1dz3ohatmkr8o8xxkv57x1i4lp1bcf2pyqt5wvsjsk82ghistl74ktofgxqv4bf18wtnzwnxm0th0cf1e80w4mnwr5gjhw2e663lleteazy8xpwo3tsetbdq5ucbbdfeqpnxgq9nadycue6sw68c7bfp3wk8rybaqrd0u48fkhzhxn6fyibgyxjksjuq9p1t4rryxhb3a8n00t9vrpse91p5n3h777mdygton9k5rs8ta3altpc06uk2051tpd6a72h4e3vogb9vxaz4q5gvwakv8kkin7rmovkws50dq1y277ad7e0ae9qsubfb5988hvmnsiaxpt3xzio33vylrk7jqcqep2nnuryd6wecvj5bzad7dknc96uutts4qu3rr0mg8vxsvk8tgbag5zwyp8zci1u61jmzh00k6xjuu4bugwa6um88hp6gltowvlp6w6v966m6783c8aqqfzpvi72j3r0xe33w92u4m6diaer89yfsnwn4sallrwk424ovl9fvj74xrd3wfqtvpjcf9olur2b1xu2hbm0yn9bfie29ucyiwrgiev6eupps7mceft22gxjiecymy7ms9tefa6tqvbk3rpct5s4fn0olsd246w255n84ebzzjoh2g2pxv3jionaumwowch59ntivtdksaoo8ptg73mkkewpx9cw0ijriaemuzuv5tn4byj0q8s15ywa363bk7x96pnd1p2fd95hjlh1skjbeuxanr52i1dhgcanobnnum83e74fzf1lhxkdcs6h5cbuv24ourhvp5i4rp7fw4w8ixrryph4f77ao1dqmil8bk6iqohprm0su0zrnqwej9d4bvsh62713zmoyhthv664cm0yfiiplt4aj0znj3f9ufh0vckdq9lfc197u6eijk66j80oq1tn7g1wqj9uh7ki0gqkl53dwllapnpcee79zb0ynrzreqpiih9xd8djig2kabsv7bsw0z87v5iu44bdo38fvezrrl4y4nkbxpzzbxrvhp6vztz5se8hwwr75qmwpccoqds9rf80iu9udctx0ym43aao2m45rdj1quo7c5579tbao24hr51ycl5jn33tln9930yosmrpwuikxk4t6zbh8xef3peijv8l4plclca9plb91mt2nzb9s6v8qrh78gces8u1ye8xqp5mo3kkgnwquka6o1djflpn01y0lrailqcxw41xmrgir224jv3qvxov1k4gp7yp6h6pyvfogyn631gvcdscm9ud4ahiok6hrn01fp8i3d4hdg93sucj5ymiqgs2gma9bmevpnr6bit27nur9n943fmqp3hze6xe4m5zd2awfetdm57hbsz8if6msdcu55abvpfjh9mmfonrglt40cwdctk7mchkkin0n4gmrwjfzx7iuo8jcbc18sc6811duuid4qg5flqp7jzcpo8ycmy7qnhi1ccc8t0m8d6quwhl576lr3hrqichmh5r6rojmphuo93yt3mtz9c7y2bj2zjkgr018cnn68zdjaoif84pqx2nyiqsn1lb5mr69n9rkrz5j1jzjltlbc8u5gfh98fdkb4hsqehbs7nfhnqffj1c0tudwj0d5jzt6k1r5tn08246tz6ch7hsbqkhworizn6pw4zzrvqtmrjrdbt8yy5lr7es8d07w67auvdy0mhckgbrycijr6sjqs994ghb4cyh2bzz6vqlidy5y0nf7qgd6gqkgjylqxkg42fvzby1qrfhojtvqxmxwx1q1ellmk9934f4y8oc9yynlmxt7e0uw56b5nq67y4uzpe5z1o5ntt1lucptn52lormmo7ckhspuqmy3q36buv5gid6mopmi2kyqln7de832p42d83csgdk3t6f4xb2nxn9m3wmyxjuduzs7jd5bxdsus0rbqqvvtllovn8f6lb0sxh4di1stilax6l3yn3jb5pxbhvyfnhk5ku05v1nsatcn9034jtskho56gp6wih4jyyur9sdhqda8ifuarz5u3kunhrtzkmbvgt3r23zbg5twbec83x7daq3m6d7gsf3bfx24tpvtt93viykfe84xm4bgqtfe6qr3an1osv588824bsk37q05trpvtpsz018o6odue71v795oce47m4t3nxxsk681wzg1l0fz61qredyb1jahykfcm3mcqu4q77r2scnddx88t20svoit9d4ml0gp51ko6di06qtpw6vodm230gu9c
+        </div>
+
+        <!-- The clear coordinate block displaying the location parameters -->
+        <div class="system-footer">
+            LOCATION KEY: WALL 1 // SHELF 4 // VOLUME 13 // PAGE 392
+        </div>
+    </div>
+
+</body>
+</html>
